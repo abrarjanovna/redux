@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import Cart from "./Cart";
 import { clearCart } from "../features/cart/cartSlice";
+import { SiGithub } from "react-icons/si";
 
 export default function Products() {
   const dispatch = useDispatch();
@@ -37,6 +38,11 @@ export default function Products() {
           >
             clear cart
           </button>
+        </footer>
+        <footer>
+          <a href="https://github.com/abrarjanovna/redux">
+            <SiGithub />
+          </a>
         </footer>
       </div>
     </section>
